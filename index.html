@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Bill Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Electricity Bill Calculator</h1>
+        <form id="billForm">
+            <label for="totalUnits">Total Units Consumed:</label>
+            <input type="number" id="totalUnits" name="totalUnits" required>
+
+            <label for="currentReading">Current Meter Reading:</label>
+            <input type="number" id="currentReading" name="currentReading">
+
+            <label for="previousReading">Previous Meter Reading:</label>
+            <input type="number" id="previousReading" name="previousReading">
+
+            <div class="separator">Or</div>
+
+            <label for="tenantUnits">Enter Tenant Units Consumed:</label>
+            <input type="number" id="tenantUnits" name="tenantUnits">
+
+            <label for="totalBill">Total Bill Amount (₹):</label>
+            <input type="number" id="totalBill" name="totalBill" required>
+
+            <button type="submit">Calculate</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
