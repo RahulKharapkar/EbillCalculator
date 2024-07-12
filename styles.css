@@ -1,6 +1,5 @@
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #e0f7fa, #e1bee7);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,10 +17,6 @@ body {
     text-align: center;
     border: 1px solid #e0e0e0;
     transition: transform 0.3s ease;
-}
-
-.container:hover {
-    transform: translateY(-5px);
 }
 
 h1 {
