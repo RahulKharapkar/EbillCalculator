@@ -19,7 +19,28 @@ document.getElementById('billForm').addEventListener('submit', function(event) {
     // Calculate tenant's charge
     const tenantCharge = tenantUnits * costPerUnit;
 
-    // Display the result
-    const resultDiv = document.getElementById('result');
-    resultDiv.textContent = `The tenant's charge for ${tenantUnits} units is ₹${tenantCharge.toFixed(2)}.`;
+    // Display the result in modal
+    const resultText = document.getElementById('resultText');
+    resultText.textContent = `The tenant's charge for ${tenantUnits} units is ₹${tenantCharge.toFixed(2)}.`;
+
+    const modal = document.getElementById('myModal');
+    modal.style.display = "flex";
+
+    // Get the close button element
+    const closeButton = document.getElementsByClassName("close")[0];
+    closeButton.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // Close the modal if user clicks anywhere outside the modal
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    // Redirect to payment page on clicking pay button
+    document.getElementById('payButton').onclick = function() {
+        window.location.href = 'payment.html';
+    }
 });
