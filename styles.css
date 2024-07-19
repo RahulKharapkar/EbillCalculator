@@ -5,6 +5,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    background: linear-gradient(to right, #fff4ea, #ff8000);
 }
 
 .container {
@@ -60,7 +61,7 @@ input:focus {
 
 button {
     padding: 10px;
-    background-color: #007bff;
+    background-color: #ff8000;
     color: white;
     border: none;
     border-radius: 10px;
@@ -69,7 +70,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #552b00;
 }
 
 .separator {
@@ -78,7 +79,13 @@ button:hover {
     color: #757575;
     text-align: center;
 }
-
+.head-card{
+    background-color: #ff8914;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #fff8dd, -5px -5px 10px #d4d4d4;
+    margin-bottom: 20px;
+}
 .tenant-card {
     background-color: #fff9c4;
     padding: 20px;
@@ -157,4 +164,29 @@ button:hover {
 
 #payButton:hover {
     background-color: #218838;
+}
+
+#splitBillLink {
+    color: #ff8000;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#splitBillLink:hover {
+    text-decoration: none;
+}
+
+#finalAmountText {
+    margin-top: 20px;
+    display: none; /* Hidden by default */
+}
+
+#finalAmountText span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d9534f; /* Bootstrap's red color */
+}
+
+.hidden {
+    display: none;
 }
