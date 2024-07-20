@@ -82,7 +82,7 @@ button:hover {
 .head-card{
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 5px 5px 10px #fff8dd, -5px -5px 10px #d4d4d4;
+    box-shadow: 5px 5px 10px #fff8dd, -5px -5px 10px #fff8dd;
     margin-bottom: 20px;
     border-style:groove;
     border-color: #ff8914;
