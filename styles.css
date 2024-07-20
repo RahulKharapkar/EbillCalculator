@@ -80,11 +80,12 @@ button:hover {
     text-align: center;
 }
 .head-card{
-    background-color: #ff8914;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 5px 5px 10px #fff8dd, -5px -5px 10px #d4d4d4;
     margin-bottom: 20px;
+    border-style:groove;
+    border-color: #ff8914;
 }
 .tenant-card {
     background-color: #fff9c4;
