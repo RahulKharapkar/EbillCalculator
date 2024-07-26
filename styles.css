@@ -5,11 +5,12 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: linear-gradient(to right, #fff4ea, #ff8000);
+    background-image:url("background.jpg");
+    background-size: cover;
 }
 
 .container {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.958);
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -61,7 +62,7 @@ input:focus {
 
 button {
     padding: 10px;
-    background-color: #ff8000;
+    background-color: #6242c4;
     color: white;
     border: none;
     border-radius: 10px;
@@ -70,28 +71,31 @@ button {
 }
 
 button:hover {
-    background-color: #552b00;
+    background-color: #312066;
 }
 
 .separator {
     margin: 20px 0;
     font-size: 14px;
-    color: #757575;
+    color: #312066;
     text-align: center;
+    font-weight: bold;
+    font:x-large ;
 }
 .head-card{
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 5px 5px 10px #fff8dd, -5px -5px 10px #fff8dd;
+    /* box-shadow: 5px 5px 10px #fff8dd, -5px -5px 10px #fff8dd; */
     margin-bottom: 20px;
     border-style:groove;
-    border-color: #ff8914;
+    border-color: #6242c4;
 }
 .tenant-card {
-    background-color: #fff9c4;
+    border-style: double;
+    border-color: #6242c4;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 5px 5px 10px #d9d9d9, -5px -5px 10px #ffffff;
+    /* box-shadow: 5px 5px 10px #d9d9d9, -5px -5px 10px #ffffff; */
     margin-bottom: 20px;
 }
 
@@ -154,28 +158,20 @@ button:hover {
 }
 
 #payButton {
-    padding: 10px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 10px;
+    padding: 15px;
+    background-color: #764eee;
+    color: white;  
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
 }
 
 #payButton:hover {
-    background-color: #218838;
+    background-color: #422a89;
 }
 
-#splitBillLink {
-    color: #ff8000;
-    text-decoration: underline;
-    cursor: pointer;
-}
 
-#splitBillLink:hover {
-    text-decoration: none;
-}
+
+
 
 #finalAmountText {
     margin-top: 20px;
@@ -185,7 +181,7 @@ button:hover {
 #finalAmountText span {
     font-size: 24px;
     font-weight: bold;
-    color: #d9534f; /* Bootstrap's red color */
+    color: #764eee; /* Bootstrap's red color */
 }
 
 .hidden {
