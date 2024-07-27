@@ -85,17 +85,18 @@ button:hover {
 .head-card{
     padding: 20px;
     border-radius: 5px;
-    /* box-shadow: 5px 5px 10px #fff8dd, -5px -5px 10px #fff8dd; */
+    box-shadow: 5px 5px 10px #dcd8d8, -5px -5px 10px #ffffff;
     margin-bottom: 20px;
     border-style:groove;
     border-color: #6242c4;
+    background-color: #a78ef36d;
 }
 .tenant-card {
     border-style: double;
     border-color: #6242c4;
     padding: 20px;
     border-radius: 10px;
-    /* box-shadow: 5px 5px 10px #d9d9d9, -5px -5px 10px #ffffff; */
+    box-shadow: 5px 5px 10px #dcd8d8, -5px -5px 10px #ffffff;
     margin-bottom: 20px;
 }
 
@@ -141,6 +142,11 @@ button:hover {
     max-width: 300px;
     border-radius: 10px;
     text-align: center;
+}
+
+#splitBillLink{
+    color: #312066;
+    text-decoration: wavy;
 }
 
 .close {

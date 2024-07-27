@@ -41,7 +41,9 @@ document.getElementById('billForm').addEventListener('submit', function(event) {
 
     // Split bill logic
     document.getElementById('splitBillLink').onclick = function() {
-        const reductionAmount = Math.floor(Math.random() * 51) + 150; // Random value between 150 and 200
+        // Random value between 150 and 200
+        // const reductionAmount = Math.floor(Math.random() * 51) + 150;
+        const reductionAmount =  150; 
         const updatedTenantCharge = tenantCharge - reductionAmount;
 
         // Display the final amount prominently
