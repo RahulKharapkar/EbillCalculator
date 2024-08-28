@@ -40,17 +40,17 @@ document.getElementById('billForm').addEventListener('submit', function(event) {
     }
 
     // Split bill logic
-    document.getElementById('splitBillLink').onclick = function() {
-        // Random value between 150 and 200
-        // const reductionAmount = Math.floor(Math.random() * 51) + 150;
-        const reductionAmount =  150; 
-        const updatedTenantCharge = tenantCharge - reductionAmount;
+    // document.getElementById('splitBillLink').onclick = function() {
+    //     // Random value between 150 and 200
+    //     // const reductionAmount = Math.floor(Math.random() * 51) + 150;
+    //     const reductionAmount =  150; 
+    //     const updatedTenantCharge = tenantCharge - reductionAmount;
 
-        // Display the final amount prominently
-        const finalAmountText = document.getElementById('finalAmountText');
-        finalAmountText.innerHTML = `After adding split bill discount of ₹${reductionAmount}, Final Amount to be Paid: <br><span style="font-size: 30px; font-weight: bold; color: #d9534f;">₹${updatedTenantCharge.toFixed(2)}</span>`;
-        finalAmountText.style.display = "block";
-    }
+    //     // Display the final amount prominently
+    //     const finalAmountText = document.getElementById('finalAmountText');
+    //     finalAmountText.innerHTML = `After adding split bill discount of ₹${reductionAmount}, Final Amount to be Paid: <br><span style="font-size: 30px; font-weight: bold; color: #d9534f;">₹${updatedTenantCharge.toFixed(2)}</span>`;
+    //     finalAmountText.style.display = "block";
+    // }
 
     // Redirect to payment page on clicking pay button
     document.getElementById('payButton').onclick = function() {
